@@ -82,8 +82,16 @@
     Dont add a license.
     Click create repository.
 
-    In order to link the online repo to your local repo you 
+    In order to link the online repo to your local repo you copy the push code from the section on the github page and run it in the terminal in vs code.
+    Verify the remote connection using "git remote -v" This should show you the links to the github repositories that the local repo is linked to.
 
+    GITHUB COMMMANDS
+
+    git remote -v                           - Verifies the connection to the online repo. Will list links to linked repos.
+    git push                                - Pushes the changes to the local version to the online repository
+    git push reponame branchname            - Sends commits from the local repo to a specific branch on a remore repository. Use origin as the name for the online repo.
+    git remote rename oldname newname       - Renames a remote github repository.
+    git remote remove reponame              - Removes/disconnects a remote repository from your local repository.
     -->
   </body>
 </html>
