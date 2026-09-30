@@ -90,6 +90,8 @@
     git remote -v                           - Verifies the connection to the online repo. Will list links to linked repos.
     git push                                - Pushes the changes to the local version to the online repository
     git push reponame branchname            - Sends commits from the local repo to a specific branch on a remore repository. Use origin as the name for the online repo.
+    git push -u reponame branchname         - commits the files from the local repo to the remote repo and sets the remote repo as the "upstream repo"/main repo.
+                                              Doing this makes it so that you only have to use "git push" to commit changes to the remote repo.
     git remote rename oldname newname       - Renames a remote github repository.
     git remote remove reponame              - Removes/disconnects a remote repository from your local repository.
     -->
