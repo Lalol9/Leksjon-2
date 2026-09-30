@@ -40,6 +40,14 @@
     You need to be on the branch you want to merge the second branch into.
     e.g If you are on the master branch and merge a branch called button then the button branch gets merged into the master branch.
 
+    There are two types of merging.
+    - Fast forwards.
+    - Three way merging.
+
+    Fast forwards merging is used when the main branch doesnt have any new commits since the branch tha is being merged was made.
+
+    Three way merging happens when both branches have had commits since the branch was made.
+
     COMMANDS -------------------------------------------------------
 
     git branch                      - Lists the existing branches in the current repository
@@ -49,10 +57,33 @@
     git switch -c nameofbranch      - Creates a new branch and switches to it immediately.
     git merge                       - Merges branches. Will merge the named branch into the currently active branch. 
                                       e.g If you are on the master branch and merge a branch called button then the button branch gets merged into the master branch.
+    git merge --abort                - Aborts the merge.
     git branch -m                   - Renames the currently active branch.
     git branch -m oldname newname   - Renames the named branch to new name.
     git branch -d branchname        - deletes the named branch.
     
+
+
+    REMOTE REPOSITORIES/GITHUB
+    Git can track your project locally, while github/a remote repository provides a shared copy of the repository online.
+
+    Github provides
+    - Remote repositories.
+    - Collaboration - Allows you to share repositories with others.
+    - Remote repository - A shared copy of the repository stored online
+
+    Creating a github repo.
+
+    Find the button for making a new repo.
+    Make a descriptive name, often the same as the local repo.
+    Choose visibility.
+    Don't add a readme, it can mess up stuff regarding push requests.
+    Don't add a .gitignore file.
+    Dont add a license.
+    Click create repository.
+
+    In order to link the online repo to your local repo you 
+
     -->
   </body>
 </html>
