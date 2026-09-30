@@ -7,6 +7,10 @@
   </head>
   <body>
     <!-- 
+
+    Can you update the feature branch from the main branch?
+    Will files set to be ignored by the .gitignore file be included in newly created batches?
+
     GIT BRANCHES ----------------------------------------------------------------
     A branch is an independent line of development in a GIT repository, Like a branch of a tree.
     The main branch can be called main or master branch
@@ -26,15 +30,28 @@
     - Allows changes to be developed separately from the main branch.
     - Can be merbeg back into the main branch when the work is ready.
 
+    BRANCHES.
+    Delete a branch when it has served it's purpose.
+    If you might need a branch with the same purpose later it is better to make a new branch at that time
+    so that it is up to date with the main/master branch.
+
+    MERGING BRANCHES
+    When you merge branches the changes in the branch are added after the canges to the main branch.
+    You need to be on the branch you want to merge the second branch into.
+    e.g If you are on the master branch and merge a branch called button then the button branch gets merged into the master branch.
+
     COMMANDS -------------------------------------------------------
 
-    git branch                  - Lists the existing branches in the current repository
-    git branch nameofnewbranch  - Creates a new branch with the name specified.
-                                  You can create "nested" branches by making a branch of a branch.
-    git switch                  - Switches between branches.
-    git switch -c nameofbranch  - Creates a new branch and switches to it immediately.
-    git merge                   - Merges branches. Will merge the named branch into the currently active branch. 
-                                  e.g If you are on the master branch and merge a branch called button then the button branch gets merged into the master branch.
+    git branch                      - Lists the existing branches in the current repository
+    git branch nameofnewbranch      - Creates a new branch with the name specified.
+                                      You can create "nested" branches by making a branch of a branch.
+    git switch                      - Switches between branches.
+    git switch -c nameofbranch      - Creates a new branch and switches to it immediately.
+    git merge                       - Merges branches. Will merge the named branch into the currently active branch. 
+                                      e.g If you are on the master branch and merge a branch called button then the button branch gets merged into the master branch.
+    git branch -m                   - Renames the currently active branch.
+    git branch -m oldname newname   - Renames the named branch to new name.
+    git branch -d branchname        - deletes the named branch.
     
     -->
   </body>
